@@ -1,0 +1,9 @@
+services: 
+  - type: web
+    name: my-blog-backend
+    env: java
+    buildCommand: ./gradlew build
+    startCommand: java -jar build/list/*.jar
+    envVars:
+    - key: JAVA_VERSION
+      value: 17
