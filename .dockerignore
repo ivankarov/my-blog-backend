@@ -1,0 +1,8 @@
+.gradle 
+build
+.git
+*.log
+*.jar
+*.war
+*.ear
+target/
