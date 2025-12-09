@@ -1,6 +1,7 @@
 FROM gradle:7.6-jdk17-alpine AS builder
 WORKDIR /app
 COPY . .
+RUN chmod +x ./gradlew
 RUN ./gradlew build -x test
 FROM eclipse-temurin:17
 WORKDIR /app
