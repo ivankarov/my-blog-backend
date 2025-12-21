@@ -2,6 +2,7 @@ FROM gradle:8.8-jdk21-alpine AS builder
 WORKDIR /app
 COPY . .
 RUN chmod +x ./gradlew
+ENV SPRING_PROFILES_ACTIVE=docker
 RUN ./gradlew build -x test --no-daemon
 FROM eclipse-temurin:21-jre-alpine
 WORKDIR /app
