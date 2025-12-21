@@ -8,11 +8,11 @@ group = 'com.example.diplod'
 version = '0.0.1-SNAPSHOT'
 description = 'demo blog-api'
 
-java {
-	toolchain {
-		languageVersion = JavaLanguageVersion.of(20)
-	}
-}
+// java {
+// 	toolchain {
+// 		languageVersion = JavaLanguageVersion.of(20)
+// 	}
+// }
 
 configurations {
 	compileOnly {
