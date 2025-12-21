@@ -13,7 +13,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @Configuration
 @RequiredArgsConstructor
 @Profile("!test")
-public class DataInitializer {
+public class DataInitializer{
     private PasswordEncoder passwordEncoder;
     private final UserService userService;
     @PostConstruct
