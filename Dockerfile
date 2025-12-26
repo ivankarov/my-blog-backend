@@ -4,7 +4,6 @@ COPY . .
 RUN chmod +x ./gradlew
 ENV SPRING_PROFILES_ACTIVE=docker
 RUN ./gradlew build -x test --no-daemon
-ENV SPIRNG_PROFILES_ACTIVE=docker
 FROM eclipse-temurin:21-jre-alpine
 WORKDIR /app
 COPY --from=builder /app/build/libs/*.jar app.jar
